@@ -5,8 +5,8 @@ plugins {
 }
 
 android {
-    namespace = "com.example.joo_fitness_pro"
-    compileSdk = 36                       // ← 35 → 36
+    namespace = "com.yossefjoo.joofit"
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -20,9 +20,9 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.joo_fitness_pro"
+        applicationId = "com.yossefjoo.joofit"
         minSdk = 21
-        targetSdk = 36                    // ← اختياري: رفعه لتطابق compileSdk
+        targetSdk = 36
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         multiDexEnabled = true
@@ -31,6 +31,8 @@ android {
     buildTypes {
         release {
             signingConfig = signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
         }
     }
 }
