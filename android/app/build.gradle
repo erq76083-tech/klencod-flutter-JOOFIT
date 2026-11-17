@@ -6,11 +6,10 @@ plugins {
 
 android {
     namespace = "com.example.joo_fitness_pro"
-    compileSdk = 35
+    compileSdk = 36                       // ← 35 → 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
-        // ← السطران الأهم لحل المشكلة
         coreLibraryDesugaringEnabled true
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
@@ -22,8 +21,8 @@ android {
 
     defaultConfig {
         applicationId = "com.example.joo_fitness_pro"
-        minSdk = 21                  // ← flutter_local_notifications v17+ يتطلب 21
-        targetSdk = 35
+        minSdk = 21
+        targetSdk = 36                    // ← اختياري: رفعه لتطابق compileSdk
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         multiDexEnabled = true
@@ -41,6 +40,5 @@ flutter {
 }
 
 dependencies {
-    // ← السطر الأهم: مكتبة desugaring
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.4'
 }
