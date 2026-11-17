@@ -1,7 +1,7 @@
 name: joo_fitness_pro
-description: "JOO FITNESS PRO - iOS Cupertino Smart Gym & Workout System by YOSSEF JOO"
+description: "JOOFIT PRO - النظام الذكي للجيم والمتابعة الشخصية وتنظيم الجداول باللهجة المصرية - تطوير JOO"
 publish_to: 'none'
-version: 2.0.0+2
+version: 3.0.0+3
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
